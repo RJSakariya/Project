@@ -78,3 +78,4 @@ function accordion3() {
     var toggledropdown = document.querySelector('.canvas-drop-links-3');
     toggledropdown.classList.toggle('open-dropdown-1');
 }
+
