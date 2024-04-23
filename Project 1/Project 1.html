@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Project 1.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <style>
+        .but {
+            width: fit-content;
+            padding: 2px 5px;
+        }
+
+        .addcart {
+            background-color: #cc8020;
+            color: white;
+        }
+
+        .addcart:hover {
+            background-color: #51371b;
+            color: white;
+        }
+    </style>
+</head>
+
+<body class="">
+    <main class="container-fluid p-0">
+        <div class="row p-0">
+            <div class="top d-flex justify-content-center" id="top">
+                <p class="m-0 align-self-center">Avail PAN India free shipping on orders above Rs.499/-</p>
+            </div>
+        </div>
+        <button type="button" class="button-close">
+            <i class='fa-solid fa-close'></i>
+        </button>
+    </main>
+    <nav class="navbar navbar-expand-lg bg-white p-0">
+        <div class="container-fluid px d-flex justify-content-between">
+            <div class="container-xl p-0 d-flex justify-content-between">
+                <a class="navbar-brand p-0" href="#">
+                    <img src="https://www.girveda.com/cdn/shop/files/Girveda_Logo_1_300x300.svg?v=1694691433" alt="">
+                </a>
+                <div class="d-flex justify-content-center">
+                    <div class="offcanvas-xl offcanvas-end text-bg-white" tabindex="-1" id="offcanvasDarkNavbar"
+                        aria-labelledby="offcanvasDarkNavbarLabel">
+                        <div class="offcanvas-body p-0">
+                            <ul class="navbar-nav">
+                                <li class="nav-item dropdown px-1">
+                                    <a class="nav-link p-0 d-flex d-column justify-content-between" href="#"
+                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <a class="nav-link d-flex align-items-center d-flex justify-content-between"
+                                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Natural Farming <i class="fa-solid fa-angle-down d-none d-xl-block"></i>
+                                            <i class="fa-solid fa-angle-right d-block d-xl-none"></i>
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-menu-white rounded-0">
+                                            <li><a class="dropdown-item" href="#">Basic Principles of CBNF</a></li>
+                                            <li><a class="dropdown-item" href="#">Four Pillars of CBNF</a></li>
+                                            <li><a class="dropdown-item" href="#">Why CBNF?</a></li>
+                                        </ul>
+                                    </a>
+                                </li>
+                                <hr class="divider m-0">
+                                <li class="nav-item dropdown px-1">
+                                    <a class="nav-link p-0" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        <a class="nav-link d-flex align-items-center d-flex justify-content-between"
+                                            href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Know Girveda <i class="fa-solid fa-angle-down d-none d-xl-block"></i> <i
+                                                class="fa-solid fa-angle-right d-block d-xl-none"></i>
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-menu-white rounded-0">
+                                            <li><a class="dropdown-item" href="#">Gir-Somnath Region</a></li>
+                                            <li><a class="dropdown-item" href="#">Why Girveda</a></li>
+                                            <li><a class="dropdown-item" href="#">Our Process</a></li>
+                                            <li><a class="dropdown-item" href="#">Our Cause</a></li>
+                                            <li><a class="dropdown-item" href="#">Our Founders</a></li>
+                                            <li><a class="dropdown-item" href="#">Research & Development</a></li>
+                                        </ul>
+                                    </a>
+                                </li>
+                                <hr class="divider m-0">
+                                <li class="nav-item dropdown px-1">
+                                    <a class="nav-link p-0" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        <a class="nav-link d-flex align-items-center d-flex justify-content-between"
+                                            href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Shop <i class="fa-solid fa-angle-down d-none d-xl-block"></i><i
+                                                class="fa-solid fa-angle-right d-block d-xl-none"></i>
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-menu-white rounded-0">
+                                            <li><a class="dropdown-item" href="#">★★★Bestseller ★★★</a></li>
+                                            <li><a class="dropdown-item" href="#">Ghee</a></li>
+                                            <li><a class="dropdown-item" href="#">Natural Farm Honey</a></li>
+                                            <li><a class="dropdown-item" href="#">Natural Pulses</a></li>
+                                            <li><a class="dropdown-item" href="#">Natural Flours</a></li>
+                                            <li><a class="dropdown-item" href="#">Oils</a></li>
+                                            <li><a class="dropdown-item" href="#">Lifestyle and Healthcare
+                                                    Supplements</a></li>
+                                            <li><a class="dropdown-item" href="#">Ayurvedic Products</a></li>
+                                            <li><a class="dropdown-item" href="#">Natural Food Products</a></li>
+                                            <li><a class="dropdown-item" href="#">All</a></li>
+                                        </ul>
+                                    </a>
+                                </li>
+                                <hr class="divider m-0">
+                                <li class="nav-item px-1">
+                                    <a class="nav-link" href="#">Know What You Eat</a>
+                                </li>
+                                </li>
+                                <hr class="divider m-0">
+                                <li class="nav-item px-1">
+                                    <a class="nav-link" href="#">Blog</a>
+                                </li>
+                                <hr class="divider m-0">
+                                <li class="nav-item px-1">
+                                    <a class="nav-link" href="#">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="site_menus d-flex align-items-center">
+                    <button class="btn border-1 border-secondary-subtle d-block d-xl-none p-0 px-2" type="button"
+                        data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+                        aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars"></i>
+                        <font class="d-none d-md-inline-block">Menu</font>
+                    </button>
+                    <button class="btn p-0 px-2 border-1 border-secondary-subtle ms-3"><i class="fa-solid fa-user"></i>
+                        <font class="d-none d-md-inline-block">Sign In</font>
+                    </button>
+                    <button class="btn p-0 px-2 border-1 border-secondary-subtle mx-3"><i
+                            class="fa-solid fa-cart-shopping"></i>
+                        <font class="d-none d-md-inline-block">Your Cart</font>
+                    </button>
+                    <button class="btn p-0 px-2 border-1 border-secondary-subtle"><i
+                            class="fa-solid fa-magnifying-glass"></i>
+                        <font class="d-none d-md-inline-block">Search</font>
+                    </button>
+                </div>
+            </div>
+    </nav>
+    <main class="container-fluid p-0">
+        <section class="s1 row">
+            <div class="col-12 d-flex">
+                <div class="swiper mySwiper p-0">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="https://ucarecdn.com/55ae876a-47ee-4e94-b9a0-520423f06f67/-/format/auto/-/preview/3000x3000/-/quality/lighter/Home%20page%201.jpg"
+                                alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://ucarecdn.com/ec6d2a5c-a42a-4d95-a18b-7faf11c24a36/-/format/auto/-/preview/3000x3000/-/quality/lighter/Home%20page%202.jpg"
+                                alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://ucarecdn.com/53844378-ad95-4068-9014-27047e6bc11c/-/format/auto/-/preview/3000x3000/-/quality/lighter/Home%20page%203.jpg"
+                                alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://ucarecdn.com/b6037ecf-4b68-4113-8939-1b203dcef314/-/format/auto/-/preview/3000x3000/-/quality/lighter/Home%20page%204.jpg"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-button-next rounded-start-2 d-none d-lg-flex">
+                        <i class="fa-solid fa-chevron-right" style="color: black;"></i>
+                    </div>
+                    <div class="swiper-button-prev rounded-end-2 d-none d-lg-flex">
+                        <i class="fa-solid fa-chevron-left" style="color: black;"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="s2 row mt-4">
+            <div class="col-12 col-md-6 col-lg-3 d-flex flex-column jusify-content-center align-items-center">
+                <div class="rounded-container"><img
+                        src="https://cdn.shopify.com/s/files/1/0684/1129/3988/files/cow.png?v=1705319287"
+                        alt="Your Image Description"></div>
+                <pre class="mt-4">Gir Cow</pre>
+                <p class="mt-3 text-wrap">The best nutrition from the mighty breed</p>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 d-flex flex-column jusify-content-center align-items-center">
+                <div class="rounded-container"><img
+                        src="https://cdn.shopify.com/s/files/1/0684/1129/3988/files/cow2.png?v=1705319287"
+                        alt="Your Image Description"></div>
+                <pre class="mt-4">Authenticity</pre>
+                <p class="mt-3 text-wrap text-center">Crafted with unwavering commitment to quality from farm to
+                    home.</p>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 d-flex flex-column jusify-content-center align-items-center">
+                <div class="rounded-container"><img
+                        src="https://cdn.shopify.com/s/files/1/0684/1129/3988/files/cow6.png?v=1705556859"
+                        alt="Your Image Description"></div>
+                <pre class="mt-4">Tradition</pre>
+                <p class="mt-3 text-wrap">Preserving timeless wisdom for holistic nourishment.</p>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 d-flex flex-column jusify-content-center align-items-center">
+                <div class="rounded-container"><img
+                        src="https://cdn.shopify.com/s/files/1/0684/1129/3988/files/cow4.png?v=1705323247"
+                        alt="Your Image Description"></div>
+                <pre class="mt-4">Purpose</pre>
+                <p class="mt-3 text-wrap">Fulfilling a vision for natural and sustainable wellness</p>
+            </div>
+        </section>
+        <section class="s3 row">
+            <div class="col-12 col-md-6 d-flex flex-column jusify-content-center">
+                <h3>Living a fast-paced life <br>
+                    where you barely have time for anything?</h3>
+                <p>
+                    We get that! That's why, we think you deserve to take some rest from worrying about your health
+                    and let us handle that.
+                </p>
+                <p>
+                    At Girveda, we are on a mission to make wellness an easy-to access lifestyle for all the busy
+                    bees.
+                </p>
+            </div>
+            <div class="col-12 col-md-6 d-flex flex-column jusify-content-center">
+                <h3>How do we do that?</h3>
+                <p>Our Products are grown using Cow-Based natural Farming, cutting down the chemical load on your
+                    food to almost null and preserving the maximum natural nutrient value of food.</p>
+                <p>So, when you pick up a Girveda product, know that it's just pure goodness of nature in a pocket,
+                    all set to get you healthy and happy.</p>
+                <p>Ready to start being healthier and happier with Girveda?</p>
+                <p>Check out our products and add wellness to your cart now!</p>
+            </div>
+        </section>
+        <section class="s4 col-12">
+            <img src="https://ucarecdn.com/bb7d7313-ae1a-48ce-a387-9d5b1c261ff9/-/format/auto/-/preview/3000x3000/-/quality/lighter/gir3%20copy.png"
+                alt="">
+        </section>
+        <section class="s5 col-12">
+            <video src="https://cdn.shopify.com/videos/c/o/v/8f64f35b53bf410bb067bbd03706449d.mp4" controls
+                loop></video>
+        </section>
+        <section class="s6">
+            <div class="row align-items-center justify-content-center">
+                Popular Categories
+            </div>
+        </section>
+        <section class="s7">
+            <div class="row">
+                <div class="col-6 col-md-4 d-flex flex-column jusify-content-center">
+                    <img src="https://ucarecdn.com/50d3a89f-f476-40e9-9ddd-feca7ab7b34b/-/format/auto/-/preview/3000x3000/-/quality/lighter/Pulses.png"
+                        alt="">
+                </div>
+                <div class="col-6 col-md-4 d-flex flex-column jusify-content-center">
+                    <img src="https://ucarecdn.com/8b05db3c-180d-44d1-942c-2f253de363e9/-/format/auto/-/preview/3000x3000/-/quality/lighter/Spices.png"
+                        alt="">
+                </div>
+                <div class="col-6 col-md-4 d-flex flex-column jusify-content-center">
+                    <img src="https://ucarecdn.com/50d3a89f-f476-40e9-9ddd-feca7ab7b34b/-/format/auto/-/preview/3000x3000/-/quality/lighter/Flours.png"
+                        alt="">
+                </div>
+                <div class="col-6 col-md-4 d-flex flex-column jusify-content-center">
+                    <img src="https://ucarecdn.com/50d3a89f-f476-40e9-9ddd-feca7ab7b34b/-/format/auto/-/preview/3000x3000/-/quality/lighter/Pulses.png"
+                        alt="">
+                </div>
+                <div class="col-6 col-md-4 d-flex flex-column jusify-content-center">
+                    <img src="https://ucarecdn.com/8b05db3c-180d-44d1-942c-2f253de363e9/-/format/auto/-/preview/3000x3000/-/quality/lighter/Spices.png"
+                        alt="">
+                </div>
+                <div class="col-6 col-md-4 d-flex flex-column jusify-content-center">
+                    <img src="https://ucarecdn.com/50d3a89f-f476-40e9-9ddd-feca7ab7b34b/-/format/auto/-/preview/3000x3000/-/quality/lighter/Flours.png"
+                        alt="">
+                </div>
+            </div>
+        </section>
+        <section class="s8">
+            <img src="https://ucarecdn.com/9529b290-f0f6-44c6-8dda-e5758ddbd1f4/-/format/auto/-/preview/3000x3000/-/quality/lighter/Artboard%20%E2%80%93%2014.png"
+                alt="">
+        </section>
+        <section class="s9">
+            <div class="container-sm">
+                <div class="swiper">
+                    <button id="swiper-button-prev"
+                        class="swiper-button material-symbols-outlined">chevron_left</button>
+                    <div class="img-list">
+                        <div class="img-item">
+                            <div class="row">
+                                <p class="mb-2">about <a href="#">Natural Farm Honey</a></p>
+                            </div>
+                            <div class="row">
+                                <div class="u pt-2 d-flex justify-content-center">
+                                    <i class="fa-regular fa-user"></i>
+                                    <span class="material-symbols-outlined">done</span>
+                                </div>
+                                <div class="f col">
+                                    <h6> K SARAVANAN <span>Verified</span></h6>
+                                    <p class="d-flex justify-content-between">
+                                        <span>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-regular fa-star-half-stroke"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </span>
+                                        <span>27/03/24</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="review">
+                                <h6></h6>
+                            </div>
+                            <div class="product">
+                                <p>Natural Farm Honey</p>
+                            </div>
+                        </div>
+                        <div class="img-item">
+                            <div class="row">
+                                <p class="mb-2">about <a href="#">About A2 Gir Cow Ghee</a></p>
+                            </div>
+                            <div class="row">
+                                <div class="u pt-2 d-flex justify-content-center">
+                                    <i class="fa-regular fa-user"></i>
+                                    <span class="material-symbols-outlined">done</span>
+                                </div>
+                                <div class="f col">
+                                    <h6> Pramod Shettigar <span>Verified</span></h6>
+                                    <p class="d-flex justify-content-between">
+                                        <span>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-regular fa-star-half-stroke"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </span>
+                                        <span>25/03/24</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="review">
+                                <h6>It's not A2 Gir Cow Ghee,It's A2 Cow Ghee</h6>
+                            </div>
+                            <div class="product">
+                                <p>It's grainy,taste is good</p>
+                            </div>
+                        </div>
+                        <div class="img-item">
+                            <div class="row">
+                                <p class="mb-2">about <a href="#">Red Chilli Powder</a></p>
+                            </div>
+                            <div class="row">
+                                <div class="u pt-2 d-flex justify-content-center">
+                                    <i class="fa-regular fa-user"></i>
+                                    <span class="material-symbols-outlined">done</span>
+                                </div>
+                                <div class="f col">
+                                    <h6> jayesh trivedi <span>Verified</span></h6>
+                                    <p class="d-flex justify-content-between">
+                                        <span>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </span>
+                                        <span>23/03/24</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="review">
+                                <h6></h6>
+                            </div>
+                            <div class="product">
+                                <p>Red Chilli Powder</p>
+                            </div>
+                        </div>
+                        <div class="img-item">
+                            <div class="row">
+                                <p class="mb-2">about <a href="#">A2 Gir Cow Ghee</a></p>
+                            </div>
+                            <div class="row">
+                                <div class="u pt-2 d-flex justify-content-center">
+                                    <i class="fa-regular fa-user"></i>
+                                    <span class="material-symbols-outlined">done</span>
+                                </div>
+                                <div class="f col">
+                                    <h6> MIHIR SHAH <span>Verified</span></h6>
+                                    <p class="d-flex justify-content-between">
+                                        <span>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </span>
+                                        <span>14/03/24</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="review">
+                                <h6>Good Product and Great packing</h6>
+                            </div>
+                            <div class="product">
+                                <p>Request to being the cost of Ghee down</p>
+                            </div>
+                        </div>
+                        <div class="img-item">
+                            <div class="row">
+                                <p class="mb-2">about <a href="#">Unwind Anti-anxiety Capsules – 60 Capsules</a></p>
+                            </div>
+                            <div class="row">
+                                <div class="u pt-2 d-flex justify-content-center">
+                                    <i class="fa-regular fa-user"></i>
+                                    <span class="material-symbols-outlined">done</span>
+                                </div>
+                                <div class="f col">
+                                    <h6> Karan Solanki <span>Verified</span></h6>
+                                    <p class="d-flex justify-content-between">
+                                        <span>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-regular fa-star-half-stroke"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </span>
+                                        <span>12/02/24</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="review">
+                                <h6></h6>
+                            </div>
+                            <div class="product">
+                                <p>Unwind Anti-anxiety Capsules – 60 Capsules</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button id="swiper-button-next"
+                        class="swiper-button material-symbols-outlined">chevron_right</button>
+                </div>
+            </div>
+        </section>
+        <section class="s10 d-flex align-items-end">
+            <img src="https://ucarecdn.com/a618606e-b079-4ca2-b511-da47d3639e9c/-/format/auto/-/preview/3000x3000/-/quality/lighter/Artboard%20%E2%80%93%2015%20-%20Copy.png"
+                alt="" class="img">
+            <div class="container-fluid">
+                <div class="sh">
+                    <img src="https://cdn.shopify.com/s/files/1/0684/1129/3988/files/Component_17_4.png?v=1705560460"
+                        alt="">
+                    <p>Natural Food Product</p>
+                </div>
+                <div class="swiper2">
+                    <button id="swiper-button-prev2"
+                        class="swiper-button2 material-symbols-outlined">chevron_left</button>
+                    <div class="img-list2">
+                        <a class="img-item2 border border-secondary-subtle">
+                            <img src="https://www.girveda.com/cdn/shop/products/1-01_1e3820f4-1150-4f81-bcf0-070280836c52_300x300.jpg?v=1673329403"
+                                alt="">
+                            <center>
+                                <h6>Desi Chana</h6>
+                                <p class="text-nowrap"><i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <font>2 reviews</font>
+                                </p>
+                                <div class="row justify-content-center mb-3">
+                                    <button class="btn but border border-secondery me-2">₹ 119.00</button>
+                                    <button class="btn but border addcart">Add to Cart</button>
+                                </div>
+                            </center>
+                        </a>
+                        <a class="img-item2 border border-secondary-subtle">
+                            <img src="https://www.girveda.com/cdn/shop/products/1-06_ce5eb5e6-1dff-4a5e-b532-b08e16061179_300x300.jpg?v=1673329139"
+                                alt="">
+                            <center>
+                                <h6>Green Moong Whole</h6>
+                                <p class="text-nowrap"><i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <font>3 reviews</font>
+                                </p>
+                                <div class="row justify-content-center mb-3">
+                                    <button class="btn but border border-secondery me-2">₹ 129.00</button>
+                                    <button class="btn but border addcart">Add to Cart</button>
+                                </div>
+                            </center>
+                        </a>
+                        <a class="img-item2 border border-secondary-subtle">
+                            <img src="https://www.girveda.com/cdn/shop/products/Flours-03_300x300.jpg?v=1669649736"
+                                alt="">
+                            <center>
+                                <h6>Jowar Flour</h6>
+                                <p class="text-nowrap"><i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <font>2 reviews</font>
+                                </p>
+                                <div class="row justify-content-center mb-3">
+                                    <button class="btn but border border-secondery me-2">₹ 199.00</button>
+                                    <button class="btn but border addcart">Add to Cart</button>
+                                </div>
+                            </center>
+                        </a>
+                        <a class="img-item2 border border-secondary-subtle">
+                            <img src="https://www.girveda.com/cdn/shop/products/02-4_4e1a8ab9-41ff-4b71-b48e-ac26ef1f51d1_300x300.jpg?v=1673329127"
+                                alt="">
+                            <center>
+                                <h6>Vermicompost 1kg</h6>
+                                <div class="row justify-content-center mb-3">
+                                    <button class="btn but border border-secondery me-2">₹ 99.00</button>
+                                    <button class="btn but border addcart">Add to Cart</button>
+                                </div>
+                            </center>
+                        </a>
+                        <a class="img-item2 border border-secondary-subtle">
+                            <img src="https://www.girveda.com/cdn/shop/products/1-03_300x300.jpg?v=1669649366" alt="">
+                            <center>
+                                <h6>Toor Dal</h6>
+                                <p class="text-nowrap"><i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                    <font>3 reviews</font>
+                                </p>
+                                <div class="row justify-content-center mb-3">
+                                    <button class="btn but border border-secondery me-2">₹ 139.00</button>
+                                    <button class="btn but border addcart">Add to Cart</button>
+                                </div>
+                            </center>
+                        </a>
+                        <a class="img-item2 border border-secondary-subtle">
+                            <img src="https://www.girveda.com/cdn/shop/products/1-01_1e3820f4-1150-4f81-bcf0-070280836c52_300x300.jpg?v=1673329403"
+                                alt="">
+                            <center>
+                                <h6>Desi Chana</h6>
+                                <p class="text-nowrap"><i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <font>2 reviews</font>
+                                </p>
+                                <div class="row justify-content-center mb-3">
+                                    <button class="btn but border border-secondery me-2">₹ 119.00</button>
+                                    <button class="btn but border addcart">Add to Cart</button>
+                                </div>
+                            </center>
+                        </a>
+                        <a class="img-item2 border border-secondary-subtle">
+                            <img src="https://www.girveda.com/cdn/shop/products/1-06_ce5eb5e6-1dff-4a5e-b532-b08e16061179_300x300.jpg?v=1673329139"
+                                alt="">
+                            <center>
+                                <h6>Green Moong Whole</h6>
+                                <p class="text-nowrap"><i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <font>3 reviews</font>
+                                </p>
+                                <div class="row justify-content-center mb-3">
+                                    <button class="btn but border border-secondery me-2">₹ 129.00</button>
+                                    <button class="btn but border addcart">Add to Cart</button>
+                                </div>
+                            </center>
+                        </a>
+                        <a class="img-item2 border border-secondary-subtle">
+                            <img src="https://www.girveda.com/cdn/shop/products/Flours-03_300x300.jpg?v=1669649736"
+                                alt="">
+                            <center>
+                                <h6>Jowar Flour</h6>
+                                <p class="text-nowrap"><i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <font>2 reviews</font>
+                                </p>
+                                <div class="row justify-content-center mb-3">
+                                    <button class="btn but border border-secondery me-2">₹ 199.00</button>
+                                    <button class="btn but border addcart">Add to Cart</button>
+                                </div>
+                            </center>
+                        </a>
+                        <a class="img-item2 border border-secondary-subtle">
+                            <img src="https://www.girveda.com/cdn/shop/products/02-4_4e1a8ab9-41ff-4b71-b48e-ac26ef1f51d1_300x300.jpg?v=1673329127"
+                                alt="">
+                            <center>
+                                <h6>Vermicompost 1kg</h6>
+                                <div class="row justify-content-center mb-3">
+                                    <button class="btn but border border-secondery me-2">₹ 99.00</button>
+                                    <button class="btn but border addcart">Add to Cart</button>
+                                </div>
+                            </center>
+                        </a>
+                        <a class="img-item2 border border-secondary-subtle">
+                            <img src="https://www.girveda.com/cdn/shop/products/1-03_300x300.jpg?v=1669649366" alt="">
+                            <center>
+                                <h6>Toor Dal</h6>
+                                <p class="text-nowrap"><i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                    <font>3 reviews</font>
+                                </p>
+                                <div class="row justify-content-center mb-3">
+                                    <button class="btn but border border-secondery me-2">₹ 139.00</button>
+                                    <button class="btn but border addcart">Add to Cart</button>
+                                </div>
+                            </center>
+                        </a>
+                    </div>
+                    <button id="swiper-button-next2" class="swiper-button2 material-symbols-outlined">chevron_right
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="s11">
+            <div class="row align-items-center justify-content-center">
+                Friends of Farmers
+            </div>
+        </section>
+        <section class="s12 row">
+            <div class="col-12 col-md-6 d-flex flex-column jusify-content-center">
+                <h5>Our Lands, Our Pride</h5>
+                <p>
+                    We belong to the proud lands of Gir where farming is worshipped. Where food is grown not to
+                    feed, but to nurture. But lately, our lands are suffering as the modern farming practices
+                    wreak
+                    their havoc on our soil.
+                </p>
+                <p>
+                    Once fertile, these rich lands are turning barren with each passing day. So, we decided not
+                    to
+                    sit back and watch..
+                </p>
+            </div>
+            <div class="col-12 col-md-6 d-flex flex-column jusify-content-center">
+                <img src="https://ucarecdn.com/b8c8d11d-5dc7-496e-af2f-66283cee8e71/-/format/auto/-/preview/3000x3000/-/quality/lighter/ff2.png"
+                    alt="">
+            </div>
+        </section>
+        <section class="s13 row">
+            <div class="col-12 col-md-6 d-flex flex-column jusify-content-center">
+                <img src="https://ucarecdn.com/e3262d68-4235-499a-8f69-5ca7d1ccc7ff/-/format/auto/-/preview/3000x3000/-/quality/lighter/gir%20ptoho.png"
+                    alt="">
+
+            </div>
+            <div class="col-12 col-md-6 d-flex flex-column jusify-content-center">
+                <h5>How is Girveda Helping?</h5>
+                <p>
+                    All our products are grown using <font style="font-weight: 700;"> Cow-Based Natural Farming
+                        (CBNF) and NO CHEMICAL FERTILISERS OR PESTICIDES!</font><br>
+                    From using cow-dung and urine as manure and natural pest repellent to managing tasks like
+                    plowing and threshing grains, farmers have access to everything they need for cultivating
+                    land
+                    with the help of cows.
+                </p>
+                <h5>Friends of Farmers</h5>
+                <p>
+                    Being a Direct to Customer Brand, we help the farmers get the best value for their produce
+                    by
+                    providing them a direct market and helping them to reach more customers. This encourages
+                    them to
+                    practice CBNF and which in turn doesn't just keep us, but also our soil healthy.
+                </p>
+                <p>Being a Direct to Customer Brand, we help the farmers get the best value for their produce by
+                    providing them a direct market and helping them to reach more customers. This encourages
+                    them to
+                    practice CBNF and which in turn doesn't just keep us, but also our soil healthy.</p>
+            </div>
+        </section>
+        <section class="s14">
+            <img src="https://ucarecdn.com/e6866a85-0371-45d5-841c-5f226211534b/-/format/auto/-/preview/3000x3000/-/quality/lighter/farm...girveda.png"
+                alt="">
+            <div class="row s14_1">
+                <div class="counter col_fourth col-4 text-center">
+                    <h2 class="timer count-title count-number" data-from="0" data-to="100" data-speed="5000"
+                        data-sign="%"></h2>
+                    <h1 class="count-text ">Cow based</h1>
+                    <h1 class="count-text ">Naturel Farming</h1>
+                </div>
+                <div class="counter col_fourth col-4 text-center">
+                    <h2 class="timer count-title count-number" data-from="0" data-to="10" data-speed="5000"
+                        data-sign="+"></h2>
+                    <h1 class="count-text ">Years of</h1>
+                    <h1 class="count-text ">Practicing CBNF</h1>
+                </div>
+                <div class="counter col_fourth col-4 text-center">
+                    <h2 class="timer count-title count-number" data-from="0" data-to="0" data-speed="5000"
+                        data-sign="%"></h2>
+                    <h1 class="count-text ">Usage of </h1>
+                    <h1 class="count-text ">Chemical & GMO</h1>
+                </div>
+            </div>
+        </section>
+        <section class="s15 d-flex align-items-end">
+            <img src="https://ucarecdn.com/15b61058-4de2-44e6-927a-481adba4ca13/-/format/auto/-/preview/3000x3000/-/quality/lighter/Artboard%20%E2%80%93%2016%20two.png"
+                alt="" class="img">
+            <div class="sh">
+                <img src="https://cdn.shopify.com/s/files/1/0684/1129/3988/files/Component_17_4.png?v=1705560460"
+                    alt="">
+                <p>Ayurvedic Products</p>
+            </div>
+            <div class="container-fluid">
+                <div class="swiper3">
+                    <button id="swiper-button-prev3"
+                        class="swiper-button3 material-symbols-outlined">chevron_left</button>
+                    <div class="img-list3">
+                        <a class="img-item2 border border-secondary-subtle">
+                            <img src="https://www.girveda.com/cdn/shop/products/1-01_1e3820f4-1150-4f81-bcf0-070280836c52_300x300.jpg?v=1673329403"
+                                alt="">
+                            <center>
+                                <h6>Desi Chana</h6>
+                                <p class="text-nowrap"><i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <font>2 reviews</font>
+                                </p>
+                                <div class="row justify-content-center mb-3">
+                                    <button class="btn but border border-secondery me-2">₹ 119.00</button>
+                                    <button class="btn but border addcart">Add to Cart</button>
+                                </div>
+                            </center>
+                        </a>
+                        <a class="img-item2 border border-secondary-subtle">
+                            <img src="https://www.girveda.com/cdn/shop/products/1-06_ce5eb5e6-1dff-4a5e-b532-b08e16061179_300x300.jpg?v=1673329139"
+                                alt="">
+                            <center>
+                                <h6>Green Moong Whole</h6>
+                                <p class="text-nowrap"><i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <font>3 reviews</font>
+                                </p>
+                                <div class="row justify-content-center mb-3">
+                                    <button class="btn but border border-secondery me-2">₹ 129.00</button>
+                                    <button class="btn but border addcart">Add to Cart</button>
+                                </div>
+                            </center>
+                        </a>
+                        <a class="img-item2 border border-secondary-subtle">
+                            <img src="https://www.girveda.com/cdn/shop/products/Flours-03_300x300.jpg?v=1669649736"
+                                alt="">
+                            <center>
+                                <h6>Jowar Flour</h6>
+                                <p class="text-nowrap"><i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <font>2 reviews</font>
+                                </p>
+                                <div class="row justify-content-center mb-3">
+                                    <button class="btn but border border-secondery me-2">₹ 199.00</button>
+                                    <button class="btn but border addcart">Add to Cart</button>
+                                </div>
+                            </center>
+                        </a>
+                        <a class="img-item2 border border-secondary-subtle">
+                            <img src="https://www.girveda.com/cdn/shop/products/02-4_4e1a8ab9-41ff-4b71-b48e-ac26ef1f51d1_300x300.jpg?v=1673329127"
+                                alt="">
+                            <center>
+                                <h6>Vermicompost 1kg</h6>
+                                <div class="row justify-content-center mb-3">
+                                    <button class="btn but border border-secondery me-2">₹ 99.00</button>
+                                    <button class="btn but border addcart">Add to Cart</button>
+                                </div>
+                            </center>
+                        </a>
+                        <a class="img-item2 border border-secondary-subtle">
+                            <img src="https://www.girveda.com/cdn/shop/products/1-03_300x300.jpg?v=1669649366" alt="">
+                            <center>
+                                <h6>Toor Dal</h6>
+                                <p class="text-nowrap"><i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                    <font>3 reviews</font>
+                                </p>
+                                <div class="row justify-content-center mb-3">
+                                    <button class="btn but border border-secondery me-2">₹ 139.00</button>
+                                    <button class="btn but border addcart">Add to Cart</button>
+                                </div>
+                            </center>
+                        </a>
+                        <a class="img-item2 border border-secondary-subtle">
+                            <img src="https://www.girveda.com/cdn/shop/products/1-01_1e3820f4-1150-4f81-bcf0-070280836c52_300x300.jpg?v=1673329403"
+                                alt="">
+                            <center>
+                                <h6>Desi Chana</h6>
+                                <p class="text-nowrap"><i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <font>2 reviews</font>
+                                </p>
+                                <div class="row justify-content-center mb-3">
+                                    <button class="btn but border border-secondery me-2">₹ 119.00</button>
+                                    <button class="btn but border addcart">Add to Cart</button>
+                                </div>
+                            </center>
+                        </a>
+                        <a class="img-item2 border border-secondary-subtle">
+                            <img src="https://www.girveda.com/cdn/shop/products/1-06_ce5eb5e6-1dff-4a5e-b532-b08e16061179_300x300.jpg?v=1673329139"
+                                alt="">
+                            <center>
+                                <h6>Green Moong Whole</h6>
+                                <p class="text-nowrap"><i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <font>3 reviews</font>
+                                </p>
+                                <div class="row justify-content-center mb-3">
+                                    <button class="btn but border border-secondery me-2">₹ 129.00</button>
+                                    <button class="btn but border addcart">Add to Cart</button>
+                                </div>
+                            </center>
+                        </a>
+                        <a class="img-item2 border border-secondary-subtle">
+                            <img src="https://www.girveda.com/cdn/shop/products/Flours-03_300x300.jpg?v=1669649736"
+                                alt="">
+                            <center>
+                                <h6>Jowar Flour</h6>
+                                <p class="text-nowrap"><i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <font>2 reviews</font>
+                                </p>
+                                <div class="row justify-content-center mb-3">
+                                    <button class="btn but border border-secondery me-2">₹ 199.00</button>
+                                    <button class="btn but border addcart">Add to Cart</button>
+                                </div>
+                            </center>
+                        </a>
+                        <a class="img-item2 border border-secondary-subtle">
+                            <img src="https://www.girveda.com/cdn/shop/products/02-4_4e1a8ab9-41ff-4b71-b48e-ac26ef1f51d1_300x300.jpg?v=1673329127"
+                                alt="">
+                            <center>
+                                <h6>Vermicompost 1kg</h6>
+                                <div class="row justify-content-center mb-3">
+                                    <button class="btn but border border-secondery me-2">₹ 99.00</button>
+                                    <button class="btn but border addcart">Add to Cart</button>
+                                </div>
+                            </center>
+                        </a>
+                        <a class="img-item2 border border-secondary-subtle">
+                            <img src="https://www.girveda.com/cdn/shop/products/1-03_300x300.jpg?v=1669649366" alt="">
+                            <center>
+                                <h6>Toor Dal</h6>
+                                <p class="text-nowrap"><i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                    <font>3 reviews</font>
+                                </p>
+                                <div class="row justify-content-center mb-3">
+                                    <button class="btn but border border-secondery me-2">₹ 139.00</button>
+                                    <button class="btn but border addcart">Add to Cart</button>
+                                </div>
+                            </center>
+                        </a>
+                    </div>
+                    <button id="swiper-button-next3" class="swiper-button3 material-symbols-outlined">chevron_right
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="s16 d-flex align-items-end">
+            <div class="container-lg">
+                <div class="row">
+                    <form class="col-10 col-md-8 p-5 rounded-4 mx-5 mx-lg-0">
+                        <label for="product">Enter Product's Batch Number</label>
+                        <input type="text" class="form-control rounded-0 mb-4" name="product" placeholder="GVKC210001">
+                        <button type="submit" class="btn mb-2 px-3 py-2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="s17">
+            <img src="https://ucarecdn.com/468eed61-f1b6-4fa9-9e45-6b623bf7b141/-/format/auto/-/preview/3000x3000/-/quality/lighter/know.png"
+                alt="">
+        </section>
+        <section class="s18 d-flex align-items-end">
+            <img src="https://ucarecdn.com/f2407afd-e029-404c-9e43-c1ba9f8e2488/-/format/auto/-/preview/3000x3000/-/quality/lighter/midea%20certi.png"
+                alt="" class="img">
+            <div class="container-fluid">
+                <div class="sh">
+                    <img src="https://cdn.shopify.com/s/files/1/0684/1129/3988/files/Component_17_4.png?v=1705560460"
+                        alt="">
+                    <p>Blog</p>
+                </div>
+            </div>
+        </section>
+        <section class="s19 ps-lg-5">
+            <div class="row p-5 ms-lg-5">
+                <div class="col-12 col-md-8 p-0">
+                    <img src="https://www.girveda.com/cdn/shop/articles/Unknown-Benefits-of-Jowar-Flour-1_1024x1024.png?v=1673271445"
+                        alt="">
+                    <h5 class="ms-3">7 Miraculous Benefits of Moringa Powder</h5>
+                    <p class="ms-3 mb-5">Everything you need to know about the green goodness of moringa booster powder.
+                        What Is Moringa? Moringa oleifera is one...
+                    </p>
+                </div>
+                <div class="col-12 col-md-4 px-md-3 my-5 my-md-0">
+                    <div class="">
+                        <img src="https://www.girveda.com/cdn/shop/articles/Unknown-Benefits-of-Jowar-Flour-3-1_1024x1024.png?v=1673271438"
+                            alt="">
+                        <h5 class="px-4">5 Healthy and Tasty Bajra Recipes to Try This Winter</h5>
+                        <p class="px-4 mb-5">Winter has finally arrived, and with it comes crisp winds and bitter cold
+                            too. But fear not, as all your...</p>
+                    </div>
+                    <div class="row p-0 justify-content-center">
+                        <img src="https://www.girveda.com/cdn/shop/articles/Unknown-Benefits-of-Jowar-Flour-2_545c9759-94c1-4bc5-b3ad-9281bd50b751_1024x1024.png?v=1673271430"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="s20 d-flex align-items-end">
+            <img src="https://ucarecdn.com/f2407afd-e029-404c-9e43-c1ba9f8e2488/-/format/auto/-/preview/3000x3000/-/quality/lighter/midea%20certi.png"
+                alt="" class="img">
+            <div class="container-fluid">
+                <div class="sh">
+                    <img src="https://cdn.shopify.com/s/files/1/0684/1129/3988/files/Component_17_4.png?v=1705560460"
+                        alt="">
+                    <p>Media and Certification</p>
+                </div>
+            </div>
+        </section>
+        <section class="s21 d-flex align-items-end">
+            <div class="container-fluid">
+                <div class="swiper4">
+                    <button id="swiper-button-prev4"
+                        class="swiper-button4 material-symbols-outlined">chevron_left</button>
+                    <div class="img-list4">
+                        <a class="img-item4">
+                            <img src="https://ucarecdn.com/48dec04a-cd62-42b8-aae0-2509320ac657/-/format/auto/-/preview/3000x3000/-/quality/lighter/Bizz%20sight.png"
+                                alt="">
+                        </a>
+                        <a class="img-item4">
+                            <img src="https://ucarecdn.com/fe0c6a06-9568-4e19-a29a-3de8e97e38eb/-/format/auto/-/preview/3000x3000/-/quality/lighter/evening%20post.png"
+                                alt="">
+                        </a>
+                        <a class="img-item4">
+                            <img src="https://ucarecdn.com/2746e733-e429-4d80-94f1-b7328b492b26/-/format/auto/-/preview/3000x3000/-/quality/lighter/live%20mumbai.png"
+                                alt="">
+                        </a>
+                        <a class="img-item4">
+                            <img src="https://ucarecdn.com/30f21eea-89bd-4bff-b218-1d9806b3aba8/-/format/auto/-/preview/3000x3000/-/quality/lighter/Delhi%20News%20Now.png"
+                                alt="">
+                        </a>
+                        <a class="img-item4">
+                            <img src="https://ucarecdn.com/fe0c6a06-9568-4e19-a29a-3de8e97e38eb/-/format/auto/-/preview/3000x3000/-/quality/lighter/evening%20post.png"
+                                alt="">
+                        </a>
+                        <a class="img-item4">
+                            <img src="https://ucarecdn.com/e7142c19-e7d6-4ae4-bf0a-d3028c1a6a18/-/format/auto/-/preview/3000x3000/-/quality/lighter/indore%20pioneer.png"
+                                alt="">
+                        </a>
+                        <a class="img-item4">
+                            <img src="https://ucarecdn.com/08aefaab-a5dd-4f0a-800c-3193c2380750/-/format/auto/-/preview/3000x3000/-/quality/lighter/mumbai%20times.png"
+                                alt="">
+                        </a>
+                    </div>
+                    <button id="swiper-button-next4" class="swiper-button4 material-symbols-outlined">chevron_right
+                    </button>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <img src="https://ucarecdn.com/61312a10-1ce6-4b20-82b4-9b2bd5786117/-/format/auto/-/preview/3000x3000/-/quality/lighter/news.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="s22 d-flex align-items-end">
+            <img src="https://ucarecdn.com/50e67fad-b3a9-4b86-8ac3-25b0c3420584/-/format/auto/-/preview/3000x3000/-/quality/lighter/award%20and%20media.png"
+                alt="" class="img">
+            <div class="container-fluid">
+                <div class="sh">
+                    <img src="https://cdn.shopify.com/s/files/1/0684/1129/3988/files/Component_17_4.png?v=1705560460"
+                        alt="">
+                    <p>Awards</p>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <img src="https://ucarecdn.com/a118dcaa-cf5a-4592-84de-5934eae3b173/-/format/auto/-/preview/3000x3000/-/quality/lighter/award%20and%20media1.png" alt="">
+                    </div>
+                    <div class="row mb-5">
+                        <img src="https://ucarecdn.com/2702bddc-7193-4002-a1b5-03c76c630f3d/-/format/auto/-/preview/3000x3000/-/quality/lighter/award%20and%20media2.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="s23">
+                <div class="row p-0">
+                    <div class="col-6 col-sm-4 col-lg-2 px-2">
+                        <div class="card">
+                            <img src="https://scontent.cdninstagram.com/v/t39.30808-6/439259605_734535482178043_8077451271501413298_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=18de74&_nc_ohc=0q3noAjVTrAAb5qjTy_&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AfC_h6WBI0vxCvyAAlDCvIvqQxxxdEplMCzxlrZlpAae5A&oe=662B91FD" alt="">
+                            <div class="overlay">
+                                <p class="text-p">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-2 px-2">
+                        <div class="card">
+                            <img src="https://scontent.cdninstagram.com/v/t39.30808-6/423249947_690076296623962_3304622985777224084_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=18de74&_nc_ohc=oaOLeWnhtC4Ab7X-ByO&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AfBLyxR5TKLBM-9PpdMVB7WH8lZwloaHBxJ-RuOeJKTqOg&oe=662B94FF" alt="">
+                            <div class="overlay">
+                                <p class="text-p">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-2 px-2">
+                        <div class="card">
+                            <img src="https://scontent.cdninstagram.com/v/t39.30808-6/424560735_690072629957662_2691538196486817598_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=18de74&_nc_ohc=tOgl4zzIGjYAb6iV8e3&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AfDwEYv4UkpweJdgcJqk6KM6BwI2_GVMuRMGT9WWYUCC1Q&oe=662B8F75" alt="">
+                            <div class="overlay">
+                                <p class="text-p">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-2 px-2">
+                        <div class="card">
+                            <img src="https://scontent.cdninstagram.com/v/t39.30808-6/422418312_688038136827778_8075373057932101104_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=18de74&_nc_ohc=sw-bG0fuhcwAb7RLxVM&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AfBl40K_sfhSaefd81cfnA_PjAVzP7bNzmCfsEkO_S4OCA&oe=662BBDE7" alt="">
+                            <div class="overlay">
+                                <p class="text-p">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-2 px-2">
+                        <div class="card">
+                            <img src="https://scontent.cdninstagram.com/v/t39.30808-6/417881278_676683267963265_2388888328528113542_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=18de74&_nc_ohc=q-UnW_bAtw0Ab7nHhlO&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AfDCHv4Xb92KBonI1RtPXrlTznCyFeVeprHeqUezYIGCqg&oe=662BC42F" alt="">
+                            <div class="overlay">
+                                <p class="text-p">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-2 px-2">
+                        <div class="card">
+                            <img src="https://scontent.cdninstagram.com/v/t51.29350-15/422440461_1470979040148054_1648174644215767946_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=18de74&_nc_ohc=-MjlGB9PP3kAb5PEhCF&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AfC1hV0K5TTsazqZ6oQ5mBIOpWtjbk3fOVtOMDAyMBuW8w&oe=662BA5D7" alt="">
+                            <div class="overlay">
+                                <p class="text-p">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row p-0 mt-3">
+                    <div class="col-6 col-sm-4 col-lg-2 px-2">
+                        <div class="card">
+                            <img src="https://scontent.cdninstagram.com/v/t51.29350-15/421982244_894596992672099_7776784327094058710_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=18de74&_nc_ohc=4mmXWPPPM24Ab4EsCpY&_nc_oc=Adi9y25AIFJCbHjJKngkq50cD9YkIJ2MoHiARFd5DMXlL-qxfS-dmpj07OIMWrY32AI&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AfCEyjkt-mvVrTnemuU5kLDVPtHBgn_PwCB0xdgZAWw-Yw&oe=662B902E" alt="">
+                            <div class="overlay">
+                                <p class="text-p">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-2 px-2">
+                        <div class="card">
+                            <img src="https://scontent.cdninstagram.com/v/t51.29350-15/420040299_700310632207764_4437627118927398033_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=18de74&_nc_ohc=hWo0iMSXuMsAb4da4Z0&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AfBKW_A5fe1HrdMrvjrZDcRlsP5luB-IeuRuYibT6bSryQ&oe=662BB746" alt="">
+                            <div class="overlay">
+                                <p class="text-p">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-2 px-2">
+                        <div class="card">
+                            <img src="https://scontent.cdninstagram.com/v/t51.29350-15/419038821_820942203377805_286327165627476200_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=18de74&_nc_ohc=7vjWjpv8buEAb6a7rid&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AfD5WN0Qb90iG0SdXOQfJX6_nd4IteIprWeoeyA-ToxT7w&oe=662BAB35" alt="">
+                            <div class="overlay">
+                                <p class="text-p">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-2 px-2">
+                        <div class="card">
+                            <img src="https://scontent.cdninstagram.com/v/t39.30808-6/417881278_676683267963265_2388888328528113542_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=18de74&_nc_ohc=q-UnW_bAtw0Ab7nHhlO&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AfDCHv4Xb92KBonI1RtPXrlTznCyFeVeprHeqUezYIGCqg&oe=662BC42F" alt="">
+                            <div class="overlay">
+                                <p class="text-p">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-2 px-2">
+                        <div class="card">
+                            <img src="https://scontent.cdninstagram.com/v/t51.29350-15/414485574_772576961361162_7607753991621194563_n.heic?stp=dst-jpg&_nc_cat=100&ccb=1-7&_nc_sid=18de74&_nc_ohc=bSrj_iDJgc0Ab7RuwPt&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AfAXvE1MM7Mgj718mIBrMPrTLPxRqc_YrhLEsQrq6ixbCA&oe=662B99A0" alt="">
+                            <div class="overlay">
+                                <p class="text-p">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-2 px-2">
+                        <div class="card">
+                            <img src="https://scontent.cdninstagram.com/v/t51.29350-15/412632394_257811417103686_7505099388991126623_n.heic?stp=dst-jpg&_nc_cat=101&ccb=1-7&_nc_sid=18de74&_nc_ohc=iqouYEwSZbcAb7yV2pt&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AfBhwqq3FSkmElM2AV1RphDQt5mcgVV_iVdF7w7uvzC2GA&oe=662BB938" alt="">
+                            <div class="overlay">
+                                <p class="text-p">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </main>
+    <footer class="container-fluid d-flex align-items-center flex-column ">
+        <div class="container1">
+            <div class="row">
+                <div class="col-xxl-3 col-lg-3 col-md-6 col-sm-12 d-flex flex-column " id="footer-1">
+                    <h2 class="white">Main Menu</h2>
+                    <ul type="none" class="p-0 list">
+                        <li><a href="">Natural Farming</a></li>
+                        <li><a href="">About us</a></li>
+                        <li><a href="">Blogs</a></li>
+                        <li><a href="">Contact Us</a></li>
+                        <li><a href="" target="">Track Order</a></li>
+                    </ul>
+                </div>
+                <div class="col-xxl-3 col-lg-3 col-md-6 col-sm-12 d-flex flex-column" id="footer-1">
+                    <h2 class="white">Products</h2>
+                    <ul type="none" class="p-0 list">
+                        <li><a href="">Natural Pulses</a></li>
+                        <li><a href="">Natural Flours</a></li>
+                        <li><a href="">Spices &amp; Condiments</a></li>
+                        <li><a href="">A2 Cow Ghee</a></li>
+                        <li><a href="">Girveda Special Combo</a></li>
+                        <li><a href="">Natural Farm Honey</a></li>
+                    </ul>
+                </div>
+                <div class="col-xxl-3 col-lg-3 col-md-6 col-sm-12 d-flex flex-column" id="footer-1">
+                    <h2 class="white">Useful links</h2>
+                    <ul type="none" class="p-0 list">
+
+                        <li><a href="">Terms &amp; Conditions</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">Refund Policy</a></li>
+                        <li><a href="">Shipping and Delivery Policy</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-xxl-3 col-lg-3 col-md-6 col-sm-12 d-flex flex-column " id="footer-last">
+                    <div class="top-image">
+                        <img src="https://cdn.shopify.com/s/files/1/0684/1129/3988/files/footer-logo.svg?v=1677131215"
+                            alt="">
+                    </div>
+                    <div class="social-list mt-1">
+                        <i class="fa-brands fa-instagram" style="color: #ffffff;font-size: 23px;"></i>
+                        <i class="ri-facebook-line" style="color: white;font-size: 23px;"></i>
+                        <i class="ri-twitter-line" style="color: white;font-size: 23px;"></i>
+                    </div>
+                    <ul type="none" class="p-0 list">
+                        <p style="color: #d1d1d1;">
+                            Girveda LLP <br>
+                            LLP Identification Number: AAU-6580 <br>
+                            Sahjanand Farm, Near Bypass, Near Jaydev LPG Pump, Zanzarda Chokdi
+                            Junagadh,Gujarat,India-362001<br>
+
+                        </p>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-info d-flex flex-column container">
+            <div class="anchor  d-flex ">
+                <div class="link-1 d-flex justify-content-center align-items-center">
+                    <a href=""><i class="fa-solid fa-envelope" style="color: #ffffff;"></i>
+                    </a><a href="" class="email">&nbsp;info@girveda.com&nbsp;&nbsp; </a>
+
+                </div>
+                <div class="link-1 d-flex justify-content-center align-items-center">
+                    <a href="">
+                        <i class="fa-solid fa-square-phone" style="color: #ffffff;font-size: 18px;"></i></a><a href=""
+                        class="tel-number">
+                        &nbsp;+91 7271871871&nbsp;&nbsp;</a>
+
+                </div>
+                <div class="link-1 d-flex justify-content-center align-items-center">
+                    <a href=""><i class="fa-solid fa-phone" style="color: #ffffff;font-size: 13px;"></i>
+                    </a><a href="" class="tel-number">&nbsp;+91
+                        7271871871 </a>
+
+                </div>
+            </div>
+            <h2>© Copyright 2024 – Girveda. All Rights Reserved.</h2>
+        </div>
+    </footer>
+</body>
+
+</html>
+<script src="Project 1.js">
+
+</script>
