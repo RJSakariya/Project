@@ -1,3 +1,4 @@
+// Menu
 function showcanvas() {
     var canvas = document.querySelector('.offcanvas-slider');
     canvas.classList.add('offcanvas-slider-show');
@@ -36,6 +37,8 @@ function hidecanvas() {
     var canvas = document.querySelector('.offcanvas-slider');
     canvas.classList.remove('offcanvas-slider-show');
 }
+
+// Dropdown
 function accordion1() {
     var downArrow2 = document.querySelector('.down-arrow-2');
     downArrow2.classList.remove('up-arrow');
@@ -79,3 +82,4 @@ function accordion3() {
     toggledropdown.classList.toggle('open-dropdown-1');
 }
 
+// 
