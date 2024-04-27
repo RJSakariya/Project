@@ -637,12 +637,50 @@ header::after {
 
 /* Section 2 */
 .sec2{
+    width: 100%;
     padding: 120px 0px 54px;
+}
+
+.sec2 span {
+    color: #484848;
+    position: relative;
+    font-weight: 600;
+    padding: 10px 20px;
+}
+
+.sec2 span::after,
+.sec2 span::before {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-30%);
+}
+
+.sec2 span::before {
+    content: url('https://wp.xpressbuddy.com/purefit/wp-content/themes/purefit/assets/img/s_left.png');
+    left: 0px;
+}
+
+.sec2 span::after {
+    content: url('	https://wp.xpressbuddy.com/purefit/wp-content/themes/purefit/assets/img/s_right.png');
+    margin-left: 5px;
+}
+
+.sec2 h1{
+    font-family: 'Chakra Petch';
+    font-weight: 700;
+    font-size: 45px;
+    text-align: center;
+}
+
+.popular-product{
+    padding: 16px 50px 16px 30px;
 }
 
 /* Media Query */
 @media (max-width: 1500px) {
-
+    .sec2 .row{
+        max-width: 1320px;
+    }
 }
 
 @media (max-width: 1199px) {
