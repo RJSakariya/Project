@@ -13,6 +13,8 @@
     --offcanvas: #161614;
     --newoffcanvas: #0000003a;
     --heading: #ece6e6;
+    --section-span: #ffffffb3;
+    --check: #ffbf14;
 }
 
 *::selection {
@@ -21,12 +23,17 @@
     color: var(--text);
 }
 
+body {
+    overflow-x: hidden;
+}
+
 /* Header */
 
 header {
     background-color: var(--bg);
     position: relative;
     min-width: 350px;
+    transition: all 0.5s ease-in;
 }
 
 .linkbar {
@@ -198,6 +205,26 @@ header {
     transform: translateY(0px);
 }
 
+.fixed {
+    position: sticky;
+    z-index: 5;
+    animation: forwards pos 0.5s ease-in-out;
+}
+.fixed .link a{
+    padding: 30px 0px;
+}
+
+@keyframes pos {
+    0% {
+        top: -100px;
+    }
+
+    100% {
+        top: 0px;
+    }
+
+}
+
 /* Canvas */
 
 .offcanvas-slider {
@@ -209,7 +236,6 @@ header {
     top: 0px;
     right: -745px;
     transition: all 0.5s ease-out;
-    overflow-y: scroll;
     z-index: 99;
 }
 
@@ -409,7 +435,7 @@ header {
     min-width: 100%;
     background-color: var(--newoffcanvas);
     padding: 10px;
-    outline: 2px solid --theme;
+    outline: 2px solid var(--theme);
     margin-bottom: 25px;
     color: var(--text);
 
@@ -534,7 +560,7 @@ header::after {
 }
 
 .hero span {
-    color: white;
+    color: var(--text);
     position: relative;
     font-weight: 500;
     padding: 10px 20px;
@@ -568,7 +594,7 @@ header::after {
     min-height: 50px;
     border: 1px solid var(--text);
     background-color: transparent;
-    color: white;
+    color: var(--text);
     font-weight: 700;
     position: relative;
     transition: all 0.3s ease-in-out;
@@ -612,7 +638,7 @@ header::after {
 
 .contact .col-9 span {
     font-size: 12px;
-    color: #9fa3a0;
+    color: var(--section-span);
     font-weight: 700;
     margin: 0px;
     padding: 0px;
@@ -636,13 +662,30 @@ header::after {
 }
 
 /* Section 2 */
-.sec2{
+.sec2 {
     width: 100%;
+    height: 1420px;
     padding: 120px 0px 54px;
+    background: url('img/1.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-width: 350px;
+}
+
+.sec2 .row:first-child {
+    max-width: 1320px;
+    width: 100%;
+}
+
+.sec2 .head {
+    height: fit-content;
 }
 
 .sec2 span {
-    color: #484848;
+    color: var(--section-span);
     position: relative;
     font-weight: 600;
     padding: 10px 20px;
@@ -665,23 +708,78 @@ header::after {
     margin-left: 5px;
 }
 
-.sec2 h1{
+.sec2 h1 {
     font-family: 'Chakra Petch';
     font-weight: 700;
     font-size: 45px;
     text-align: center;
+    color: var(--text);
 }
 
-.popular-product{
+.popular-product {
     padding: 16px 50px 16px 30px;
+    background-color: #161614;
+}
+
+.product-img {
+    min-width: 100px;
+    min-height: 160px;
+    display: flex;
+    justify-content: center;
+}
+
+.product-info {
+    min-width: calc(100%-100px);
+    padding-left: 20px;
+    flex-grow: 1;
+}
+
+.product-info a {
+    font-size: 18px;
+    margin: 16px 0px 12px;
+    display: block;
+    text-decoration: none;
+    color: var(--text);
+    transition: all 0.2s ease-in;
+    text-wrap: nowrap;
+}
+
+.product-info a:hover {
+    color: var(--theme);
+}
+
+.product-info p {
+    color: var(--heading);
+}
+
+.checked {
+    color: var(--check);
+}
+
+.bordered {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--check);
+    color: #242424;
+}
+
+.product-info hr {
+    border: 0px;
+    background: #ece6e6;
+    height: 1px;
+}
+
+.product-info h2 {
+    color: var(--text);
+    font-family: 'Chakra Petch';
+}
+
+.shop-cart {
+    padding: 5px 10px;
+    background-color: var(--theme);
 }
 
 /* Media Query */
-@media (max-width: 1500px) {
-    .sec2 .row{
-        max-width: 1320px;
-    }
-}
+@media (max-width: 1500px) {}
 
 @media (max-width: 1199px) {
     .sec1 {
@@ -736,16 +834,64 @@ header::after {
     .hero {
         min-height: 420px;
     }
+
+    .sec2 {
+        height: 2063px;
+        background-size: cover;
+    }
+
+    .popular-add img {
+        width: 100%;
+    }
 }
 
-@media (max-width:720px) {
+@media (max-width:767px) {
     .hero h1 {
         font-size: 32px;
+    }
+
+    .sec2 {
+        height: 2704px;
+    }
+
+    .popular-add {
+        display: flex;
+        justify-content: center;
+    }
+
+    .popular-add img {
+        max-width: 530px;
     }
 }
 
 @media (max-width:512px) {
     .protin {
         max-width: 350px;
+    }
+
+    .product-img {
+        min-width: 85px;
+        min-height: 160px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .product-img img {
+        max-height: 140px;
+    }
+
+    .product-info {
+        min-width: calc(100%-85px);
+        padding-left: 20px;
+        flex-grow: 1;
+    }
+
+    .product-info a {
+        font-size: 16px;
+        text-wrap: nowrap;
+    }
+
+    .popular-product p {
+        text-wrap: nowrap;
     }
 }

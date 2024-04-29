@@ -1,3 +1,14 @@
+//Header
+window.addEventListener('scroll', function() {
+    var header = document.querySelector('.header');
+    if (window.scrollY > 120) {
+        header.classList.add('fixed');
+    } else {
+        header.classList.remove('fixed');
+    }
+});
+
+
 // Menu
 function showcanvas() {
     var canvas = document.querySelector('.offcanvas-slider');
