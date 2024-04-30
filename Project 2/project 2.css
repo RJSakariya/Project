@@ -208,12 +208,19 @@ header {
 .fixed {
     position: sticky;
     z-index: 5;
-    animation: forwards pos 0.5s ease-in-out;
+    animation: forwards pos 0.7s ease-in-out;
 }
 .fixed .link a{
     padding: 30px 0px;
 }
-
+.fixed .link a::after {
+    bottom: 20px;
+}
+.fixed .dropdown-link a {
+    font-family: "Chakra Petch";
+    padding: 10px;
+    color: var(--text);
+}
 @keyframes pos {
     0% {
         top: -100px;
@@ -670,12 +677,13 @@ header::after {
     background-position: center center;
     background-repeat: no-repeat;
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     min-width: 350px;
 }
 
-.sec2 .row:first-child {
+.sec2 .row{
     max-width: 1320px;
     width: 100%;
 }
@@ -778,6 +786,34 @@ header::after {
     background-color: var(--theme);
 }
 
+.sec2 .about{
+    padding: 120px 0px;
+}
+
+.about h1 {
+    text-align: left;
+    margin-top: 14px;
+}
+.about h5{
+    font-family: 'Chakra Petch';
+    color: var(--theme);
+}
+.about h2{
+    font-family: 'Chakra Petch';
+    color: var(--text);
+    font-size: 150px;
+    font-weight: 700;
+}
+
+.about p{
+    color: var(--section-span);
+    font-size: 16px;
+    font-weight: 400;
+    font-family: poppins;
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+
 /* Media Query */
 @media (max-width: 1500px) {}
 
@@ -798,6 +834,10 @@ header::after {
     .hero:last-child {
         display: flex;
         justify-content: flex-start;
+    }
+    .sec2 {
+        height: 2063px;
+        background-size: cover;
     }
 }
 
@@ -834,12 +874,6 @@ header::after {
     .hero {
         min-height: 420px;
     }
-
-    .sec2 {
-        height: 2063px;
-        background-size: cover;
-    }
-
     .popular-add img {
         width: 100%;
     }
