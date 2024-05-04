@@ -5,6 +5,7 @@
 }
 
 :root {
+    /* colors */
     --selection: #00000077;
     --bg: #171717;
     --text: #fff;
@@ -15,6 +16,10 @@
     --heading: #ece6e6;
     --section-span: #ffffffb3;
     --check: #ffbf14;
+
+    /* font-family */
+    --theme-family: "Chakra Petch";
+    --poppins: "Poppins";
 }
 
 *::selection {
@@ -98,7 +103,7 @@ header {
 }
 
 .dropdown-link a {
-    font-family: "Chakra Petch";
+    font-family: var(--theme-family);
     padding: 10px;
     color: var(--text);
 }
@@ -194,7 +199,7 @@ header {
 }
 
 .cart-sug .dropdown-link a {
-    font-family: "Chakra Petch";
+    font-family: var(--theme-family);
     text-decoration: none;
     padding: 10px;
     color: var(--text);
@@ -210,17 +215,21 @@ header {
     z-index: 5;
     animation: forwards pos 0.7s ease-in-out;
 }
-.fixed .link a{
+
+.fixed .link a {
     padding: 30px 0px;
 }
+
 .fixed .link a::after {
     bottom: 20px;
 }
+
 .fixed .dropdown-link a {
-    font-family: "Chakra Petch";
+    font-family: var(--theme-family);
     padding: 10px;
     color: var(--text);
 }
+
 @keyframes pos {
     0% {
         top: -100px;
@@ -277,7 +286,7 @@ header {
 }
 
 .canvas-heading-1 {
-    font-family: "Chakra Petch", sans-serif;
+    font-family: var(--theme-family), sans-serif;
     font-weight: 900;
     font-style: normal;
     color: var(--text);
@@ -607,7 +616,7 @@ header::after {
     transition: all 0.3s ease-in-out;
 }
 
-.buynow::after {
+.buynow::before {
     content: "";
     height: 50px;
     width: 30%;
@@ -625,7 +634,7 @@ header::after {
     border: 1px solid var(--theme);
 }
 
-.buynow:hover::after {
+.buynow:hover::before {
     width: 165px;
     transform: translate(0px, 0px);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
@@ -682,9 +691,12 @@ header::after {
     justify-content: flex-start;
     align-items: center;
     min-width: 350px;
+    z-index: 1;
+    position: relative;
+    margin-bottom: -95px;
 }
 
-.sec2 .row{
+.sec2 .row {
     max-width: 1320px;
     width: 100%;
 }
@@ -713,7 +725,7 @@ header::after {
 }
 
 .sec2 span::after {
-    content: url('	https://wp.xpressbuddy.com/purefit/wp-content/themes/purefit/assets/img/s_right.png');
+    content: url('https://wp.xpressbuddy.com/purefit/wp-content/themes/purefit/assets/img/s_right.png');
     margin-left: 5px;
 }
 
@@ -787,7 +799,7 @@ header::after {
     background-color: var(--theme);
 }
 
-.sec2 .about{
+.sec2 .about {
     padding: 120px 0px;
 }
 
@@ -795,43 +807,182 @@ header::after {
     text-align: left;
     margin-top: 14px;
 }
-.about h5{
+
+.about h5 {
     font-family: 'Chakra Petch';
     color: var(--theme);
 }
-.about h2{
+
+.about h2 {
     font-family: 'Chakra Petch';
     color: var(--text);
     font-size: 150px;
     font-weight: 700;
 }
 
-.about p{
+.about p {
     color: var(--section-span);
     font-size: 16px;
     font-weight: 400;
-    font-family: poppins;
+    font-family: var(--poppins);
     line-height: 30px;
     letter-spacing: 1px;
 }
 
-.about ul{
+.about ul {
     padding: 0px;
 }
-.about ul li{
+
+.about ul li {
     color: var(--text);
     font-size: 16px;
     font-weight: 400;
     margin-top: 50px;
 }
 
-.about ul li span{
+.about ul li span {
     padding: 0px;
 }
 
-.about ul li span::after,.about ul li span::before{
+.about ul li span::after,
+.about ul li span::before {
     display: none;
 }
+
+/* Section 3 */
+
+.sec3 {
+    height: 960px;
+    width: 100%;
+    min-width: 350px;
+    padding: 215px 0px 120px;
+    background: url('https://wp.xpressbuddy.com/purefit/wp-content/uploads/2024/04/feature_bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.sec3 .row {
+    max-width: 1320px;
+    width: 100%;
+}
+
+.feature-list{
+    max-width: 405px;
+}
+
+.li{
+    display: flex;
+    cursor: pointer;
+}
+.feature-icon{
+    position: relative;
+    min-width: 82px;
+}
+.feature-icon svg{
+    position: relative;
+    top: 16px;
+    left: 16px;
+    z-index: 1;
+}
+.feature-icon::after{
+    content: "";
+    height: 62px;
+    width: 62px;
+    border: 2px solid var(--theme);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 50%;
+    background-color: var(--close);
+    z-index: 0;
+}
+.li:hover>.feature-icon::after{
+    border: 2px dashed var(--theme);
+    animation: infinite 5s rot linear;
+}
+
+@keyframes rot{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+  
+.feature-info{
+    flex-grow: 1;
+}
+
+.feature-info h5{
+    font-family: var(--theme-family);
+    color: var(--text);
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.feature-info p{
+    color: var(--section-span);
+    font-family: var(--poppins);
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+.sec3 span {
+    color: var(--text);
+    position: relative;
+    font-weight: 500;
+    padding: 10px 20px;
+}
+
+.sec3 span::after,
+.sec3 span::before {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-30%);
+}
+
+.sec3 span::before {
+    content: url('https://wp.xpressbuddy.com/purefit/wp-content/themes/purefit/assets/img/s_left.png');
+    left: 0px;
+}
+
+.sec3 span::after {
+    content: url('	https://wp.xpressbuddy.com/purefit/wp-content/themes/purefit/assets/img/s_right.png');
+    margin-left: 5px;
+}
+
+.feature-add{
+    max-width: 470px;
+    width: 100%;
+    z-index: 1;
+}
+.feature-add h1 {
+    font-family: 'Chakra Petch';
+    font-size: 65px;
+    font-weight: 900;
+    color: var(--text);
+}
+
+.feature-add p {
+    color: var(--section-span);
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--poppins);
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+/* Section 4 */
+
+.sec4 {}
+
 /* Media Query */
 @media (max-width: 1500px) {}
 
@@ -853,6 +1004,7 @@ header::after {
         display: flex;
         justify-content: flex-start;
     }
+
     .sec2 {
         height: 2063px;
         background-size: cover;
@@ -892,14 +1044,20 @@ header::after {
     .hero {
         min-height: 420px;
     }
+
     .popular-add img {
         width: 100%;
     }
-    .sec2 .about{
+
+    .sec2 .about {
         padding: 80px 0px;
     }
-    .about ul li{
+
+    .about ul li {
         margin-top: 25px;
+    }
+    .sec3{
+        background-position: 0px;
     }
 }
 
@@ -920,11 +1078,25 @@ header::after {
     .popular-add img {
         max-width: 530px;
     }
-    .about h2{
+
+    .about h2 {
         font-size: 60px;
     }
-    .about ul li{
+
+    .about ul li {
         margin-top: 10px;
+    }
+    .sec3{
+        height: 1148px;
+    }  
+    .feature-list{
+        max-width: 100%;
+    }
+    .feature-add{
+        max-width: 100%;
+    }
+    .feature-add h1 {
+        font-size: 32px;
     }
 }
 
@@ -958,4 +1130,7 @@ header::after {
     .popular-product p {
         text-wrap: nowrap;
     }
+    .sec3{
+        height: fit-content;
+    }  
 }
