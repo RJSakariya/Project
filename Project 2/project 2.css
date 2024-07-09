@@ -981,8 +981,75 @@ header::after {
 }
 /* Section 4 */
 
-.sec4 {}
+.sec4 {
+    height: 700px;
+    width: 100%;
+    min-width: 350px;
+    background: url('img/3.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 120px 0px 130px;
+}
+.sec4 .row {
+    max-width: 1320px;
+    width: 100%;
+}
+.sec4 span {
+    color: var(--section-span);
+    position: relative;
+    font-weight: 600;
+    padding: 10px 20px;
+}
+.sec4 span::after,
+.sec4 span::before {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-30%);
+}
 
+.sec4 span::before {
+    content: url('https://wp.xpressbuddy.com/purefit/wp-content/themes/purefit/assets/img/s_left.png');
+    left: 0px;
+}
+
+.sec4 span::after {
+    content: url('https://wp.xpressbuddy.com/purefit/wp-content/themes/purefit/assets/img/s_right.png');
+    margin-left: 5px;
+}
+
+.sec4 h1 {
+    font-family: 'Chakra Petch';
+    font-weight: 700;
+    font-size: 45px;
+    text-align: center;
+    color: var(--text);
+    margin-bottom: 50px;
+}
+.swiper{
+    width: 100%;
+    height: fit-content;
+}
+.imglist{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    gap: 24px;
+    overflow-x: scroll;
+}
+.imglist::-webkit-scrollbar{
+    display: none;
+}
+.img{
+    width: 300px;
+    height: fit-content;
+    background-color: var(--offcanvas);
+    padding: 30px;
+}
 /* Media Query */
 @media (max-width: 1500px) {}
 

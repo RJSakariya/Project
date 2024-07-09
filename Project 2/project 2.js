@@ -1,5 +1,5 @@
 //Header
-window.addEventListener('scroll', function() {
+window.addEventListener('scroll',function() {
     var header = document.querySelector('.header');
     if (window.scrollY > 120) {
         header.classList.add('fixed');
@@ -93,4 +93,4 @@ function accordion3() {
     toggledropdown.classList.toggle('open-dropdown-1');
 }
 
-// 
+// swiper
